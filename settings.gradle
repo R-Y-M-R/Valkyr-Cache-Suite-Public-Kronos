@@ -12,6 +12,8 @@ include 'SuitePlugins:MapPacker'
 include 'SuitePlugins:TexturePlugin'
 include 'SuitePlugins:ModelPacker'
 include 'SuitePlugins:EnumPlugin'
+include 'SuitePlugins:StructPlugin'
 include 'SuitePlugins:SpotAnimPlugin'
 include 'SuitePlugins:CS2Plugin'
+include 'SuitePlugins:KronosDataPacker'
 
