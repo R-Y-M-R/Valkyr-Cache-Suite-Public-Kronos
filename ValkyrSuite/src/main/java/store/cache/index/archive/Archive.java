@@ -1,6 +1,9 @@
 package store.cache.index.archive;
 
+import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.ByteBuffer;
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -166,6 +169,18 @@ public class Archive implements Container {
 		}
 		outputStream.writeByte(1);
 		return outputStream.flip();
+	}
+
+	public ByteArrayOutputStream asOutputStream() {
+		ByteArrayOutputStream outputStream = new ByteArrayOutputStream( );
+		for (File file : this.files) {
+			try {
+				outputStream.write(file.getData());
+			} catch(IOException e) {
+				e.printStackTrace();
+			}
+		}
+		return outputStream;
 	}
 
 	/**

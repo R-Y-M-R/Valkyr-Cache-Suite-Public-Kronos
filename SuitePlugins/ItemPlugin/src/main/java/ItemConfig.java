@@ -43,6 +43,8 @@ public class ItemConfig extends ConfigExtensionBase {
 			if (yOffset2d > 32767) {
 				yOffset2d -= 65536;
 			}
+		} else if (opcode == 9) {
+			buffer.readString();
 		} else if (opcode == 11) {
 			stackable = 1;
 		} else if (opcode == 12) {
@@ -98,6 +100,8 @@ public class ItemConfig extends ConfigExtensionBase {
 			maleHeadModel2 = buffer.readUnsignedShort();
 		} else if (opcode == 93) {
 			femaleHeadModel2 = buffer.readUnsignedShort();
+		} else if (opcode == 94) {
+			buffer.readUnsignedShort();
 		} else if (opcode == 95) {
 			zan2d = buffer.readUnsignedShort();
 		} else if (opcode == 97) {

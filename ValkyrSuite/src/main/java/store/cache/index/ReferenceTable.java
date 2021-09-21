@@ -443,6 +443,17 @@ public class ReferenceTable implements Container {
 	}
 
 	/**
+	 * Add a archive instance to this index.
+	 *
+	 * @param archive    The archive to add.
+	 * @param resetFiles If we need to reset all files in the new archive.
+	 * @return The new archive instance.
+	 */
+	public Archive addArchive(Archive archive, int toIndex, boolean resetFiles) {
+		return addArchive(archive, true, resetFiles, toIndex);
+	}
+
+	/**
 	 * Add an archive instance to this index.
 	 * 
 	 * @param archive    The archive instance.

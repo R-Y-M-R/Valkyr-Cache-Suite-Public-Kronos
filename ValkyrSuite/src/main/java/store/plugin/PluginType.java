@@ -31,6 +31,7 @@ public enum PluginType {
 	MATERIAL,
 	HITMARK,
 	ENUM,
+	STRUCT,
 	WIDGET,
 	CS2,
     WORLD_MAP;
