@@ -11,7 +11,7 @@ public class StructEditor extends ConfigEditor {
 
     @Override
     public ConfigEditorInfo getInfo() {
-        return ConfigEditorInfo.builder().index(2).archive(34).type(PluginType.ENUM).build();
+        return ConfigEditorInfo.builder().index(2).archive(34).type(PluginType.STRUCT).build();
     }
 
 }

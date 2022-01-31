@@ -126,6 +126,12 @@ public class PluginManager {
 
 					}
 
+					final PluginType type = plugin.getDescriptor().type();
+
+					if (Constants.LEGACY_MODE && type != PluginType.ITEM && type != PluginType.MESH) {
+						continue;
+					}
+
 					plugin.setFxmlFiles(fxmlFiles);
 					plugins.add(plugin);
 
@@ -167,7 +173,7 @@ public class PluginManager {
 			Set<Path> set = Sets.newHashSet();
 			Path root = Files.createDirectories(Paths.get(Constants.DEFAULT_SAVE_DIR));
 			if(Constants.localPlugins){
-				root = new File("./").toPath();
+				root = new File("ValkyrSuite").toPath();
 			}
 			Path pluginDir = Files.createDirectories(Paths.get(root.resolve("plugins").toUri()));
 			Files.walk(pluginDir).filter(plugin -> plugin.getFileName().toString().contains(".jar")).distinct()

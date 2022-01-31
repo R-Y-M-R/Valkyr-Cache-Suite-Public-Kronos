@@ -278,7 +278,8 @@ public abstract class Stream {
 		this.position -= decrease;
 	}
 
-	public int size() {
+	public int length() {
 		return this.buffer.length;
 	}
+
 }

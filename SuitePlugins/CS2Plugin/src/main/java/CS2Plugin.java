@@ -8,7 +8,7 @@ import suite.annotation.PluginDescriptor;
  * https://www.rune-server.ee/members/reverenddread/
  * @project ValkyrCacheSuite
  */
-@PluginDescriptor(author = "ReverendDread", description = "Basic CS2 editor", type = PluginType.CS2, version = "184")
+@PluginDescriptor(author = "ReverendDread", type = PluginType.CS2, version = "184")
 public class CS2Plugin extends Plugin {
 
     @Override
