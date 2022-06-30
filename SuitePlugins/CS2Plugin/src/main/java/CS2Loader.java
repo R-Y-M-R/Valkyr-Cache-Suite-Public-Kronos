@@ -13,7 +13,7 @@ import java.io.IOException;
 @Slf4j
 public class CS2Loader extends LoaderExtensionBase {
 
-    private static final String DUMP_DIR = System.getProperty("user.home") + "\\Desktop\\Kronos\\Scripts\\";
+    private static final String DUMP_DIR = System.getProperty("user.home") + "\\Desktop\\Valkyr\\Scripts\\";
     private static final boolean DUMP_CS2 = false;
     private CS2Disassembler disassembler = new CS2Disassembler();
 

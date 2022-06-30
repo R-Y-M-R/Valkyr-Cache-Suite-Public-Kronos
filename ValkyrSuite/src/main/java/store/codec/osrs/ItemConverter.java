@@ -18,8 +18,8 @@ public class ItemConverter {
 
 	public static void main(String[] args) throws IOException {
 
-		CacheLibrary cache = new CacheLibrary("F:\\Mega-Sausage-Server\\data\\cache\\");
-		CacheLibrary osrs = new CacheLibrary("C:\\Users\\Andrew\\Desktop\\177\\");
+		CacheLibrary cache = new CacheLibrary(System.getProperty("user.home") + "\\Desktop\\Valkyr\\ItemConverter\\NewCache\\");
+		CacheLibrary osrs = new CacheLibrary(System.getProperty("user.home") + "\\Desktop\\Valkyr\\ItemConverter\\OsrsCache\\");
 
 		final int size = osrs.getIndex(2).getArchive(10).getLastFile().getId();
 

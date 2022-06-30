@@ -42,7 +42,7 @@ public class XTEASManager {
 
 			@Override
 			public String filePath() {
-				return "C:\\Git\\Seers\\Cache197\\xteas.json";
+				return Constants.settings.xteaFile;
 				//return "F:\\Programmeerimine\\RSPS\\Tools\\OSDC 2.0\\2021-02-24-rev194\\xteas.json";
 			}
 

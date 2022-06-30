@@ -25,7 +25,7 @@ public class MQOConverter {
 	private Vector4d[] materials;
 
 	public static void main(String[] args) throws Exception {
-		new MQOConverter("C:\\Users\\Andrew\\Desktop\\models\\9697.mqo", false);
+		new MQOConverter(System.getProperty("user.home") + "\\Desktop\\Valkyr\\MqoModels\\1337.mqo", false);
 	}
 
 	public MQOConverter() {

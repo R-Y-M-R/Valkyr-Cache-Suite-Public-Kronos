@@ -23,8 +23,8 @@ public class IdkConverter {
 
 	public static void main(String[] args) throws IOException {
 
-		CacheLibrary cache = new CacheLibrary("");
-		CacheLibrary old_cache = new CacheLibrary("C:\\Users\\Andrew\\Desktop\\667 cache\\");
+		CacheLibrary cache = new CacheLibrary(System.getProperty("user.home") + "\\Desktop\\Valkyr\\IdkConverter\\NewCache\\");
+		CacheLibrary old_cache = new CacheLibrary(System.getProperty("user.home") + "\\Desktop\\Valkyr\\IdkConverter\\OldCache\\");
 
 		int size = old_cache.getIndex(2).getArchive(3).getLastFile().getId();
 

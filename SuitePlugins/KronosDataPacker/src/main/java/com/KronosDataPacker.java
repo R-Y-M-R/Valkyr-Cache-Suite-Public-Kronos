@@ -129,11 +129,11 @@ public class KronosDataPacker extends Plugin {
 
     @SneakyThrows
     public static void dumpMaps() {
-        CacheLibrary runescape_cache = CacheLibrary.createUncached("C:\\Git\\Seers\\Cache197\\cache");
+        CacheLibrary runescape_cache = CacheLibrary.createUncached(System.getProperty("user.home") + "\\Desktop\\Valkyr\\CacheLibrary");
         Index runescape_maps = runescape_cache.getIndex(OSRSIndices.MAPS);
 
         @Cleanup
-        RandomAccessFile raf = new RandomAccessFile(new java.io.File("C:\\Users\\Indrek\\Desktop\\TestDump\\map_index").toPath().toString(), "rw");
+        RandomAccessFile raf = new RandomAccessFile(new java.io.File(System.getProperty("user.home") + "\\Desktop\\Valkyr\\TestDump\\map_index").toPath().toString(), "rw");
 
         System.out.println("Generating map_index...");
 
